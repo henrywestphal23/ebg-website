@@ -132,3 +132,36 @@ footer {
 .footer-right {
   text-align: right;
 }
+
+.officer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  justify-items: center;
+}
+
+.officer-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  max-width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.officer-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.officer-card h3 {
+  margin: 10px 0 5px;
+}
+
+.officer-card p {
+  margin: 2px 0;
+  color: #333;
+}
