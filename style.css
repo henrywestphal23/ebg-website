@@ -575,3 +575,37 @@ html {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Show hamburger and hide nav links on small screens */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+}
