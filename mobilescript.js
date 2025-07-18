@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
   navToggle.setAttribute('aria-label', 'Toggle navigation');
   navToggle.innerHTML = '<span></span><span></span><span></span>';
   
-  nav.insertBefore(navToggle, navLinks);
+  nav.appendChild(navToggle);
   
   // Toggle mobile menu
   navToggle.addEventListener('click', function() {
