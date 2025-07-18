@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // Hamburger
   const nav = document.querySelector('nav');
-  const navLinks = document.querySelector('.nav-links');
+  const navLinks = document.querySelector('nav-links');
   
   const navToggle = document.createElement('div');
   navToggle.className = 'nav-toggle';
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     navLinks.classList.toggle('active');
   });
   
-  const navLinkItems = document.querySelectorAll('.nav-links a');
+  const navLinkItems = document.querySelectorAll('nav-links a');
   navLinkItems.forEach(link => {
     link.addEventListener('click', function() {
       navToggle.classList.remove('active');
