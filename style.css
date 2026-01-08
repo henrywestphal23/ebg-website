@@ -620,3 +620,29 @@ html {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Group Photo Styles */
+.group-photo-container {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.group-photo {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.group-photo:hover {
+  transform: scale(1.02);
+}
+
+.photo-caption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
