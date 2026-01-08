@@ -646,3 +646,129 @@ html {
   color: #666;
   font-size: 0.95rem;
 }
+
+/* Officers Hero Section */
+.officers-hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;  /* Changed from 60vh to 75vh */
+  min-height: 500px;  /* Changed from 400px to 500px */
+  background-image: url('images/officers-group-photo.jpg');
+  background-size: cover;
+  background-position: center;  /* You can also try: center top, center bottom, or specific values */
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 39, 76, 0.7) 0%, rgba(0, 39, 76, 0.5) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-title {
+  color: white;
+  font-size: 3.5rem;
+  margin: 0 0 15px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-title::after {
+  display: none;
+}
+
+.hero-subtitle {
+  color: #FFCB05;
+  font-size: 1.5rem;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for hero */
+@media (max-width: 768px) {
+  .officers-hero {
+    height: 50vh;
+    min-height: 300px;
+    background-attachment: scroll;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .officers-hero {
+    height: 40vh;
+    min-height: 250px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Group Photo Hero Section */
+.group-hero {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  min-height: 500px;
+  background-image: url('images/ebg-group-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments for group hero */
+@media (max-width: 768px) {
+  .group-hero {
+    height: 60vh;
+    min-height: 350px;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .group-hero {
+    height: 50vh;
+    min-height: 300px;
+  }
+}
